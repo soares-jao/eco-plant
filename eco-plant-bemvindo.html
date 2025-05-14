@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo - Eco-Plant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #a8e6a1, #dcedc8);
+      color: #2e7d32;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #1b5e20;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .plant-image {
+      width: 150px;
+      margin: 20px 0;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .button-container {
+      margin-top: 30px;
+    }
+
+    a {
+      background-color: #388e3c;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #2e7d32;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo à sua<br>ECO-PLANT</h1>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/2909/2909765.png" alt="Planta" class="plant-image">
+
+  <div class="button-container">
+    <a href="eco-plant-melhorado.html">Avançar para o Cadastro</a>
+  </div>
+
+</body>
+</html>
