@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo - Eco-Plant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #a8e6a1, #dcedc8);
+      color: #2e7d32;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #1b5e20;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .plant-image {
+      width: 150px;
+      margin: 20px 0;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .plant-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 700px;
+      text-align: left;
+    }
+
+    .plant-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .button-container {
+      margin: 40px 0;
+    }
+
+    a {
+      background-color: #388e3c;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #2e7d32;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo à sua<br>ECO-PLANT</h1>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/2909/2909765.png" alt="Planta" class="plant-image">
+
+  <!-- INFORMAÇÕES DAS PLANTAS -->
+  <div class="plant-card">
+    <img src="https://images.unsplash.com/photo-1603783071328-1736dc1d257c" alt="Samambaia">
+    <h2>Samambaia</h2>
+    <p><strong>Cuidados:</strong> Gosta de sombra e regas frequentes. Ideal para ambientes internos.</p>
+    <p><strong>História:</strong> Usada desde a antiguidade por suas propriedades ornamentais e purificadoras de ar.</p>
+  </div>
+
+  <div class="plant-card">
+    <img src="https://images.unsplash.com/photo-1617196034479-30908da62b70" alt="Suculenta">
+    <h2>Suculenta</h2>
+    <p><strong>Cuidados:</strong> Pouca água e muito sol. Excelente para quem tem pouco tempo.</p>
+    <p><strong>História:</strong> Símbolo de resiliência, as suculentas são populares em todo o mundo por sua beleza e resistência.</p>
+  </div>
+
+  <div class="plant-card">
+    <img src="https://images.unsplash.com/photo-1598899134739-dbd3c5deed4a" alt="Espada de São Jorge">
+    <h2>Espada de São Jorge</h2>
+    <p><strong>Cuidados:</strong> Planta resistente que pode ficar tanto no sol quanto na sombra. Pouca rega.</p>
+    <p><strong>História:</strong> Considerada uma planta de proteção espiritual em muitas culturas.</p>
+  </div>
+
+  <!-- BOTÃO DE COMPRA -->
+  <div class="button-container">
+    <a href="#">Compre já a sua ECO-PLANT</a>
+  </div>
+
+</body>
+</html>
