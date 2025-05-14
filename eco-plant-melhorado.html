@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Eco-Plant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eaf5ea;
+      color: #2d3e2f;
+    }
+
+    header {
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      padding: 30px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      background-image: url('https://images.unsplash.com/photo-1618221191220-f5f65f6ae9f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=60');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .form-container h2 {
+      color: #388e3c;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #b2dfdb;
+      border-radius: 8px;
+      background-color: #f1f8e9;
+    }
+
+    button {
+      background-color: #388e3c;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #2e7d32;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .form-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eco-Plant</h1>
+    <p>Estufa automática para cultivo doméstico sustentável</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Cadastre sua Eco-Plant</h2>
+      <form action="#" method="POST">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <label for="tipo">Tipo de planta que deseja cultivar:</label>
+        <select id="tipo" name="tipo">
+          <option value="hortalicas">Hortaliças</option>
+          <option value="ervas">Ervas medicinais</option>
+          <option value="flores">Flores</option>
+          <option value="frutas">Frutas</option>
+          <option value="outras">Outras</option>
+        </select>
+
+        <label for="mensagem">Mensagem ou observação:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eco-Plant. Crescendo com sustentabilidade.</p>
+  </footer>
+</body>
+</html>
